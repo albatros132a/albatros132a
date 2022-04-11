@@ -34,22 +34,22 @@ class TestVehicle:
     def test_start_ok(self, vehicle):
         assert vehicle.fuel > 0
         assert vehicle.started is False
-        vehicle.start()
+        vehicle.start
         assert vehicle.started is True
 
     def test_start_ok_when_already_started(self, vehicle):
         assert vehicle.fuel > 0
         assert vehicle.started is False
-        vehicle.start()
+        vehicle.start
         assert vehicle.started is True
-        vehicle.start()
+        vehicle.start
         assert vehicle.started is True
 
     def test_cannot_start_low_fuel(self, vehicle):
         assert vehicle.started is False
         vehicle.fuel = 0
         with pytest.raises(exceptions.LowFuelError):
-            vehicle.start()
+            vehicle.start
         assert vehicle.started is False
 
     def test_move_ok(self, vehicle):
