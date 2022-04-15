@@ -18,6 +18,7 @@ def is_prime(figure):
 # было посложнее для восприятия  result = 0 in list(map(lambda x: figure % x, range(3, figure)))
 #     return not result
 
+
 def filter_numbers(numbers, filter_type):
     if filter_type == ODD:
         return [i for i in numbers if i % 2 != 0]
