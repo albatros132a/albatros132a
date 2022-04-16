@@ -15,7 +15,7 @@ def is_prime(figure):
     else:
         return True
 
-# было посложнее для восприятия  result = 0 in list(map(lambda x: figure % x, range(3, figure)))
+# ранее было посложнее для восприятия  result = 0 in list(map(lambda x: figure % x, range(3, figure)))
 #     return not result
 
 
